@@ -6,7 +6,7 @@ $(document).ready ->
     arrows: false
     dots: true
     autoplay: true
-    autoplaySpeed: 5000
+    autoplaySpeed: 6000
 
 
   el = $('.slick .item')[1]
