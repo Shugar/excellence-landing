@@ -1,0 +1,127 @@
+white = #ffffff
+
+lgrey = #F7F6F4
+grey = #ededed
+dgrey = #dadada
+
+button
+  outline none
+  cursor pointer
+
+
+$placeholdcolor = #666
+
+thin(size = 1rem, line = 1.4rem, space = 0.02rem)
+  font: 100 size/line 'Helvetica Neue', Helvetica Neue, Helvetica, Arial
+  -webkit-font-smoothing: antialiased
+  letter-spacing space
+
+light(size = 1rem, line = 1.4rem, space = 0.02rem)
+  font: 200 size/line 'Helvetica Neue', Helvetica Neue, Helvetica, Arial
+  -webkit-font-smoothing: antialiased
+  letter-spacing space
+
+regular(size = 1rem, line = 1.4rem, space = 0.02rem)
+  font: 400 size/line 'Helvetica Neue', Helvetica Neue, Helvetica, Arial
+  -webkit-font-smoothing: antialiased
+  letter-spacing space
+
+medium(size = 1rem, line = 1.4rem, space = 0.02rem)
+  font: 600 size/line 'Helvetica Neue', Helvetica Neue, Helvetica, Arial
+  -webkit-font-smoothing: antialiased
+  letter-spacing space
+
+bold(size = 1rem, line = 1.4rem, space = 0.02rem)
+  font: 700 size/line 'Helvetica Neue', Helvetica Neue, Helvetica, Arial
+  -webkit-font-smoothing: antialiased
+  letter-spacing space
+
+
+
+responds($size = '1000px')
+  @media only screen and (max-width: $size)
+    {block}
+
+big()
+  @media only screen and (min-width: 1200px)
+    {block}
+
+tablet()
+  +responds(780px)
+    {block}
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)
+    {block}
+
+mobile()
+  +responds(630px)
+    {block}
+  @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait)
+    {block}
+
+mlandscape()
+  @media only screen and (min-device-width : 320px) and (max-device-width : 736px) and (orientation : landscape)
+    {block}
+
+setPosition($position)
+  if $position == middle
+    top: 50%
+    transform: translateY(-50%)
+  if $position == center
+    left: 50%
+    transform: translateX(-50%)
+  if $position == perfect
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+
+
+
+
+flexy($direction = row, $wrap = wrap)
+  display: flex
+  flex-flow $direction $wrap
+
+justify($just = center, $align = center)
+  justify-content $just
+  align-items $align
+
+
+
+
+flex()
+  if length(arguments) > 0
+    flex  arguments
+  else
+    flex 0 0 auto
+
+
+size($width = auto, $height = $width)
+  width $width
+  height $height
+
+shadow()
+  text-shadow 1px 1px 0.4px rgba(0,0,0,0.5)
+
+
+round()
+  border-radius 500px
+  overflow hidden
+
+container($maxwidth = '1200px')
+  position relative
+  margin 0 auto
+  max-width $maxwidth
+  padding 0 2rem
+
+icon(code = ' ')
+  content: code
+  display: inline-block
+  font-family: "Ionicons"
+  speak: none
+  font-style: normal
+  font-weight: normal
+  font-variant: normal
+  text-transform: none
+  text-rendering: auto
+  line-height: 1
+  -webkit-font-smoothing: antialiased

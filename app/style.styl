@@ -1,0 +1,127 @@
+@import 'nib'
+@import 'settings'
+
+global-reset()
+
+
+        
+  
+
+purpleLink = #7d396e
+purpleLinkHover = #cb596e
+blackText = #222222
+gradientPurple = linear-gradient(left, #74366e, #cb596e)
+buttonBorder = 1px #cb596e solid
+angelica = 'Anglecia Pro Text', sans-serif
+angelicad = 'Anglecia Pro Display', sans-serif
+a
+  text-decoration none 
+.href
+  a
+    color purpleLink
+    text-decoration none
+    &:hover
+      color purpleLinkHover
+      
+.href-2
+  a
+    color purpleLink
+    text-decoration none
+    border-bottom 1px purpleLink dotted
+    &:hover
+      color purpleLinkHover
+      border-bottom 1px purpleLinkHover dotted
+
+.slick-dots 
+  li 
+    button
+      &:before
+        font-size 40px
+        line-height 12px
+        color purpleLink
+    &.slick-active 
+      button:before
+        color purpleLinkHover
+
+.container
+  container(1200px)
+  min-width 1200px
+  
+.header
+  font-family angelica
+  
+  .content
+    margin-top 15px
+    height 200px
+    
+    .left, .right, .center
+      display inline-block
+      
+    .left
+      margin-top 56px
+      float left
+      font-size 16px
+      font-style italic
+      nav
+        ul
+          li
+            margin-top 33px
+            &:first-child
+              margin-top 0
+      
+    .center
+      absolute left 50% top
+      transform translateX(-50%)
+      img
+        height 160px
+        
+    .right
+      float right
+      margin-top 56px
+      button
+        font-style italic
+        font-size 15px
+        width 223px
+        background #fff
+        font-family angelica
+        border buttonBorder
+        round()
+        padding 14px 30px 11px 30px
+        color blackText
+        &:hover
+          background gradientPurple
+          color white
+          
+      p
+        font-family angelicad
+        font-size 20px
+        margin-top 20px
+        text-align center
+        
+  h1 
+    text-align center
+    font-weight bold
+    font-size 16px
+    letter-spacing 3px
+    margin-top 5px
+    color blackText
+
+.gallery
+  margin-top 50px
+  .container
+    .slick
+      .item
+        position relative
+        .background
+          background rgba(0,0,0,.5)
+          opacity 0
+          transition opacity 2s
+          transition-delay 2s
+          absolute top left
+          width 100%
+          height 100%
+          z-index 9999
+          &.visible
+            opacity 1
+        img 
+          width 100%  

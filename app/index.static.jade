@@ -1,0 +1,47 @@
+doctype html
+head
+  meta(name="viewport" content="width=device-width")
+  link(rel="stylesheet" href="stylesheets/app.css")
+  meta(charset="utf-8")
+  title Excellence
+
+  script(src="javascripts/vendor.js")
+  script(src="javascripts/app.js")
+
+
+  script.
+    require('initialize');
+
+
+body
+  .header
+    .container
+      .content 
+        .left.href
+          nav
+            ul 
+              li
+                a(href="#") Excellence
+              li
+                a(href="#") Цены и услуги
+              li
+                a(href="#") Оборудование
+        .center
+          img(src="images/Logo.svg")
+        .right
+          button Записаться на прием
+          p +7 863 302-02-31
+      h1 ВАША ДВЕРЬ В МИР НЕПРЕВЗОЙДЕННОГО КАЧЕСТВА
+
+  .gallery
+    .container
+      .slick
+        .item
+          .background
+          img(src="images/slide-1.jpg")
+        .item 
+          .background
+          img(src="images/slide-2.jpg")
+        .item 
+          .background
+          img(src="images/slide-3.jpg")
