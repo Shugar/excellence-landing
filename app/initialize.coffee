@@ -20,3 +20,4 @@ $(document).ready ->
   $('.slick').on 'afterChange', (event, slick, currentSlide) ->
     $('.background').removeClass('visible')
     $('.slick-active .background').addClass('visible')
+    
