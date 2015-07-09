@@ -3,14 +3,14 @@
 
 global-reset()
 
-
-        
-  
+body 
+  min-width 1200px
 
 purpleLink = #7d396e
 purpleLinkHover = #cb596e
 blackText = #111
 gradientPurple = linear-gradient(left, #74366e, #cb596e)
+gradientPurple-2 = linear-gradient(bottom, #74366e, #cb596e)
 buttonBorder = 1px #cb596e solid
 angelica = 'Anglecia Pro Text', sans-serif
 angelicad = 'Anglecia Pro Display', sans-serif
@@ -47,9 +47,12 @@ a
         color purpleLinkHover
 
 .container
-  container(1200px)
-  min-width 1200px
-  
+  position relative
+  margin 0 auto
+  width 1200px
+  clearfix()
+
+
 .header
   font-family angelica
   
@@ -110,7 +113,6 @@ a
     color blackText
 
 .gallery
-  margin-top 50px
   .container
     .slick
       .item
@@ -165,7 +167,6 @@ a
           margin-top 15px
     
 .about-us
-  margin-top 100px
   .container
     .title 
       display block
@@ -181,6 +182,7 @@ a
         vertical-align top
       .left
         width 35%
+        margin-left 50px
       .right
         width 55%
         .number
@@ -190,7 +192,7 @@ a
           margin-top 50px
           
         .text
-          margin-top 25px
+          margin-top 25px 
           line-height 30px
           
     .block-2, .block-4
@@ -220,3 +222,179 @@ a
         img
           position absolute
           right 100px
+
+.services
+  .container
+    .title-container
+      display block
+      margin 0 auto
+    .services-content
+      margin-top 70px
+      .item
+        width 19.7%
+        display inline-block
+        text-align center
+        &:nth-child(1)
+          img
+            height 54px
+        &:nth-child(2)
+          img
+            height 72px
+        &:nth-child(3)
+          img
+            height 71px
+        &:nth-child(4)
+          img
+            height 51px
+        &:nth-child(5)
+          img
+            height 56px
+        img
+          display block
+          margin 0 auto
+          margin-bottom 40px
+        .title
+          color blackText
+          font-family angelicad
+          font-size 18px
+          font-weight 600
+          letter-spacing 1px
+          &:hover
+            color purpleLink
+        .sub-title
+          margin-top 20px
+          color #777
+          font-family angelica
+          font-style italic
+          font-size 16px
+    .all
+      margin-top 50px
+      text-align center
+      a
+        border-bottom 1px purpleLink solid
+        color purpleLink
+        &:hover
+          color purpleLinkHover
+          border-bottom 1px purpleLinkHover solid
+  
+
+.feedback
+  padding 2em
+  .container
+    .title-content
+      display block
+      margin 0 auto
+    .content
+      margin-top 35px
+      .left, .right, .center
+        display inline-block
+        vertical-align top
+        .item
+          position relative
+          margin-top 50px
+         
+          .text
+            &::before
+              content '«'
+              display block
+              position absolute
+              padding-top 5px
+              left -20px
+            p
+              font 20px angelica 
+              line-height 32px
+          .info
+            margin-top 25px
+            .name 
+              font 16px angelica
+              font-weight 600
+              color #111
+              font-style italic
+            .sub-title
+              font 16px angelica
+              font-weight 600
+              color #777
+              margin-top 10px
+              font-style italic
+      .center
+        width 1%
+        .line
+          height 500px
+          width 3px
+          background gradientPurple-2
+          
+      .left
+        width 42%
+        margin-left 90px
+        .item
+           &:first-child 
+            margin-top 0
+        
+      .right
+        width 42%
+        margin-left 50px
+        
+    .all
+      margin-top 50px
+      text-align center
+      a
+        border-bottom 1px purpleLink solid
+        color purpleLink
+        &:hover
+          color purpleLinkHover
+          border-bottom 1px purpleLinkHover solid
+        
+
+
+.footer
+  background #f7f7f7
+  font-size 16px
+  height 270px
+  .left
+    display inline-block
+    vertical-align top
+    .left-one, .left-two
+      margin-left 55px
+      display inline-block
+      font 1em angelica
+      margin-top 40px
+      color #111111
+      font-weight 600
+      &:first-child
+        margin-left 0
+      p
+        line-height 35px
+      a
+        color #111
+        line-height 35px
+        &:hover
+          color purpleLinkHover
+    .copy
+      margin-top 70px
+      font-size 14px
+      font-style italic
+      color #777
+    .left-two
+      font-style italic 
+  .right
+    float right
+    display inline-block
+    vertical-align top
+    margin-top 40px
+    line-height 35px
+    .title
+      font 1em angelica 
+      font-weight 600
+      color #111
+    img
+      margin-left 25px
+      margin-top 20px
+      vertical-align middle
+      &:nth-child(2)
+        margin-left 0
+    .copy
+      font 1em angelica 
+      font-weight 600
+      color #777
+      margin-top 100px
+      font-style italic
