@@ -17,6 +17,24 @@ angelicad = 'Anglecia Pro Display', sans-serif
 angelicat = 'Anglecia Pro Title', sans-serif
 bodoni = 'a_BodoniNova', sans-serif
 
+// Common
+
+$all
+  margin-top 60px
+  text-align center
+  font-size 12px
+  letter-spacing 1.5px
+  a
+    font-family angelica
+    border-bottom 1px purpleLink dotted
+    color purpleLink
+    &:hover
+      color purpleLinkHover
+      border-bottom 1px purpleLinkHover dotted
+
+
+
+
 a
   text-decoration none 
 .href
@@ -49,7 +67,7 @@ a
 .container
   position relative
   margin 0 auto
-  width 1200px
+  width 1160px
   clearfix()
 
 
@@ -57,7 +75,8 @@ a
   font-family angelica
   
   .content
-    margin-top 15px
+    margin-top 12px
+    letter-spacing 1.5px
     height 200px
     
     .left, .right, .center
@@ -66,17 +85,17 @@ a
     .left
       margin-top 56px
       float left
-      font-size 16px
+      font-size 15px
       font-style italic
       nav
         ul
           li
-            margin-top 33px
+            margin-top 31px
             &:first-child
               margin-top 0
       
     .center
-      absolute left 50% top
+      absolute left 50% top 15px
       transform translateX(-50%)
       img
         height 160px
@@ -87,7 +106,7 @@ a
       button
         font-style italic
         font-size 15px
-        width 223px
+        width 230px
         background #fff
         font-family angelica
         border buttonBorder
@@ -107,12 +126,13 @@ a
   h1 
     text-align center
     font-weight bold
-    font-size 16px
+    font-size 15px
     letter-spacing 3px
-    margin-top 5px
+    margin-top 1px
     color blackText
 
 .gallery
+  margin-top 25px
   .container
     .slick
       .item
@@ -165,14 +185,91 @@ a
         .sub-title
           font-size 16px
           margin-top 15px
+  
+
+@keyframes arrow 
+  0% 
+    transform translateY(0)
     
+  50% 
+    transform translateY(100px)
+
+  100% 
+     
+    transform translateY(0)
+
+@keyframes arrow-2
+  0% 
+    transform translateY(100px)
+    
+  50% 
+    transform translateY(0)
+
+  100% 
+    transform translateY(100px)
+    
+.stellars
+  width 100%
+  height 100%
+  position absolute
+  top 0 
+  left 0
+  .stellar-1, .stellar-2, .stellar-3, .stellar-4, .stellar-5, .stellar-6, .stellar-7
+    img
+      position absolute
+      top 250px
+    &:first-child
+      img
+        top 1050px
+        right 50px
+        animation arrow 25s linear infinite
+    
+    &:nth-child(2)
+      img
+        top 1150px
+        left 75px
+        animation arrow 25s linear infinite  
+        
+    &:nth-child(3)
+      img
+        top 1600px
+        right 75px
+        animation arrow-2 25s linear infinite
+        
+    &:nth-child(4)
+      img
+        top 1950px
+        left 450px
+        animation arrow 25s linear infinite
+        
+            
+    &:nth-child(5)
+      img
+        top 2300px
+        right 25px
+        animation arrow-2  25s linear infinite
+
+    &:nth-child(6)
+      img
+        top 2200px
+        right 75px
+        animation arrow-2 25s linear infinite
+      
+    &:nth-child(7)
+      img
+        top 2450px
+        left 50px
+        animation arrow-2 25s linear infinite
+   
+      
 .about-us
+  margin-top 120px
   .container
     .title 
       display block
       margin 0 auto
     .block-1, .block-3, .block-5
-      margin-top 20px
+      margin-top 70px
       height 350px
       .left, .right 
         display inline-block
@@ -181,8 +278,8 @@ a
         color blackText
         vertical-align top
       .left
-        width 35%
-        margin-left 50px
+        width 34.8%
+        margin-left 95px
       .right
         width 55%
         .number
@@ -192,38 +289,61 @@ a
           margin-top 50px
           
         .text
-          margin-top 25px 
-          line-height 30px
+          margin-top 15px 
+          line-height 36px
           
     .block-2, .block-4
       margin-top 20px
-      height 350px
+      height 300px
       .left, .right 
         display inline-block
         font-family angelica
         font-size 20px
         color blackText
-        width 45%
+        
         vertical-align top
       .left
+        width 65%
         .number
           font-family bodoni
           color purpleLink
           font-size 60px
-          margin-left 50px
-          margin-top 50px
+          margin-left 103px
+          margin-top 26px
           
         .text
-          margin-top 25px
-          margin-left 50px
-          line-height 30px
+          margin-top 22px
+          margin-left 100px
+          line-height 35px
       .right
+        width 34%
         position relative
         img
           position absolute
-          right 100px
-
+          right 0px
+          top -47px
+    .block-3
+      margin-top 19px
+    .block-4
+      margin-top 32px
+    .block-5
+      margin-top 19px
+      .left
+        width 34.6%
+        margin-left 95px
+      .right
+        width 55%
+        .number
+          font-family bodoni
+          color purpleLink
+          font-size 60px
+          margin-top 50px
+          
+        .text
+          margin-top 15px 
+          line-height 36px
 .services
+  margin-top 114px
   .container
     .title-container
       display block
@@ -234,6 +354,7 @@ a
         width 19.7%
         display inline-block
         text-align center
+        margin-top 10px
         &:nth-child(1)
           img
             height 54px
@@ -252,7 +373,7 @@ a
         img
           display block
           margin 0 auto
-          margin-bottom 40px
+          margin-bottom 55px
         .title
           color blackText
           font-family angelicad
@@ -264,35 +385,26 @@ a
         .sub-title
           margin-top 20px
           color #777
-          font-family angelica
+          font-family angelicat
           font-style italic
           font-size 16px
     .all
-      margin-top 50px
-      text-align center
-      a
-        border-bottom 1px purpleLink solid
-        color purpleLink
-        &:hover
-          color purpleLinkHover
-          border-bottom 1px purpleLinkHover solid
+      @extend $all
   
 
 .feedback
-  padding 2em
+  margin-top 158px
   .container
     .title-content
       display block
       margin 0 auto
     .content
-      margin-top 35px
+      margin-top 75px
       .left, .right, .center
         display inline-block
         vertical-align top
         .item
           position relative
-          margin-top 50px
-         
           .text
             &::before
               content '«'
@@ -301,10 +413,10 @@ a
               padding-top 5px
               left -20px
             p
-              font 20px angelica 
-              line-height 32px
+              font 20px angelica
+              line-height 37px
           .info
-            margin-top 25px
+            margin-top 50px
             .name 
               font 16px angelica
               font-weight 600
@@ -314,39 +426,78 @@ a
               font 16px angelica
               font-weight 600
               color #777
-              margin-top 10px
+              margin-top 15px
               font-style italic
       .center
         width 1%
+        display none
         .line
-          height 500px
-          width 3px
+          min-height 700px
+          width 2px
           background gradientPurple-2
-          
+      .invisible
+        display none
+      .visible-more
+        display block
       .left
         width 42%
         margin-left 90px
+        border-right 2px purpleLink solid
         .item
-           &:first-child 
+          margin-top 70px
+          margin-bottom 75px
+          &:first-child 
             margin-top 0
+          &:after
+            width 25px
+            border-radius 100px
+            position absolute
+            display block
+            top 0
+            right -15px
+            background #fff
+            height 25px
+            border 2px purpleLinkHover solid
+            content ''
         
       .right
         width 42%
         margin-left 50px
+        .item
+          &:first-child
+            margin-top 90px
+          margin-top 140px
+          &:before
+            width 25px
+            border-radius 100px
+            position absolute
+            display block
+            top 0
+            left -70px
+            background #fff
+            height 25px
+            border 2px purpleLinkHover solid
+            content ''
         
-    .all
-      margin-top 50px
-      text-align center
-      a
-        border-bottom 1px purpleLink solid
+    .more
+      margin-top 60px
+      position relative
+      span
+        absolute top left 50%
+        cursor pointer
+        transform translateX(-50%)
+        font-size 12px
+        letter-spacing 1.5px
+        font-family angelica
+        border-bottom 1px purpleLink dotted
         color purpleLink
         &:hover
           color purpleLinkHover
-          border-bottom 1px purpleLinkHover solid
-        
+          border-bottom 1px purpleLinkHover dotted
 
 
 .footer
+  margin-top 85px
   background #f7f7f7
   font-size 16px
   height 270px
@@ -354,24 +505,27 @@ a
     display inline-block
     vertical-align top
     .left-one, .left-two
-      margin-left 55px
+      margin-left 43px
       display inline-block
       font 1em angelica
-      margin-top 40px
+      margin-top 30px
       color #111111
       font-weight 600
       &:first-child
         margin-left 0
       p
-        line-height 35px
+        line-height 37px
+        letter-spacing 0px
       a
+        letter-spacing 2px
         color #111
-        line-height 35px
+        line-height 37px
         &:hover
           color purpleLinkHover
     .copy
-      margin-top 70px
-      font-size 14px
+      margin-top 76px
+      font-size 15px
+      letter-spacing 1.1px
       font-style italic
       color #777
     .left-two
@@ -380,21 +534,21 @@ a
     float right
     display inline-block
     vertical-align top
-    margin-top 40px
+    margin-top 39px
+    margin-right 60px
     line-height 35px
     .title
       font 1em angelica 
       font-weight 600
       color #111
     img
-      margin-left 25px
-      margin-top 20px
+      margin-left 20px
+      margin-top 18px
       vertical-align middle
       &:nth-child(2)
-        margin-left 0
+        margin-left -3px
     .copy
-      font 1em angelica 
-      font-weight 600
+      font 15 angelica 
       color #777
-      margin-top 100px
+      margin-top 95px
       font-style italic

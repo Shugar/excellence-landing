@@ -21,3 +21,9 @@ $(document).ready ->
     $('.background').removeClass('visible')
     $('.slick-active .background').addClass('visible')
     
+  $.stellar({
+    horizontalScrolling:false
+    })
+
+  $('.more').click ->
+    $('.invisible').addClass('visible-more')

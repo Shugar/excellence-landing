@@ -14,6 +14,22 @@ head
 
 
 body
+  .stellars
+    .stellar-1
+      img(src="images/parallax/1.png")
+    .stellar-2
+      img(src="images/parallax/2.png")
+    .stellar-3
+      img(src="images/parallax/3.png")
+    .stellar-4
+      img(src="images/parallax/4.png")
+    .stellar-5
+      img(src="images/parallax/5.png")
+    .stellar-6
+      img(src="images/parallax/6.png")
+    .stellar-7
+      img(src="images/parallax/7.png")
+
   .header
     .container
       .content 
@@ -57,8 +73,12 @@ body
             p.item-text
               |Современное оборудование KAVO позволяет диагностировать кариес там, где другие не могут его обнаружить.
 
+  //- data-stellar-ratio="1.2"
+  
+
   .about-us
     .container
+
       img(src="images/facts.png").title
       .block-1
         .left
@@ -76,6 +96,7 @@ body
           p.text
             |Excellence является референс-клиникой KAVO, 
             |немецкого производителя высококачественного 
+            |стоматологического оборудования с более чем 100-летней историей.
         .right
           img(src="images/circle-2.png")
 
@@ -151,7 +172,7 @@ body
                 |я посещала. Не думаешь совсем о лечении. 
                 br
                 |Расслабляешься, летаешь в своих мыслях.
-                
+
             .info
               p.name Елена Перепелицина
               p.sub-title фитнес-директор PRIME
@@ -170,8 +191,20 @@ body
               p.name Василий Голубев
               p.sub-title губернатор Ростовской области
 
-        .center
-          .line
+          .item.invisible
+            .text
+              p 
+                |Ирина простобожественный мастер, а сама 
+                br
+                |клиника — превосходнейшее место из тех, что 
+                br
+                |я посещала. Не думаешь совсем о лечении. 
+                br
+                |Расслабляешься, летаешь в своих мыслях.
+
+            .info
+              p.name Елена Перепелицина
+              p.sub-title фитнес-директор PRIME
 
         .right 
           .item
@@ -198,8 +231,19 @@ body
                 |в Европу ездить.
             .info
               p.name Анонимный отзыв
-      p.all
-        a(href="") ЕЩЕ ОТЗЫВЫ
+
+          .item.invisible
+            .text
+              p 
+                |Регулярно забегаю выпить кофе и просто 
+                br
+                |перекинуться словами о повседневном.
+            .info
+              p.name Вадим Калинич
+              p.sub-title основатель сети «Есть и Пить»
+
+      p.all.more
+        span ЕЩЕ ОТЗЫВЫ
   .footer
     .container
       .left
