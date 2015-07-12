@@ -1,0 +1,134 @@
+doctype html
+head
+  meta(name="viewport" content="width=device-width")
+  link(rel="stylesheet" href="stylesheets/app.css")
+  meta(charset="utf-8")
+  title Excellence | Excellence
+
+  script(src="javascripts/vendor.js")
+  script(src="javascripts/app.js")
+  script(src="https://maps.googleapis.com/maps/api/js?v=3?key=AIzaSyALv14QJCMFIoAqH2JLuGruwxtxCG_IBKk")
+
+
+  script.
+    require('initialize');
+    require('main');
+
+
+body
+  .header
+    .container
+      .content 
+        .left.href
+          nav
+            ul 
+              li
+                a(href="excellence.html").active Excellence
+              li
+                a(href="#") Цены и услуги
+              li
+                a(href="oborudovanie.html") Оборудование
+        .center
+          a(href="index.html")
+            img(src="images/Logo.svg")
+        .right
+          button Записаться на прием
+          p +7 863 302-02-31
+      h1 ВАША ДВЕРЬ В МИР НЕПРЕВЗОЙДЕННОГО КАЧЕСТВА
+
+
+  .center
+    h1.title-page Excellence
+    .slick-2
+      .item
+        .background-2
+        img(src="images/slide-1.jpg")
+      .item 
+        .background-2
+        img(src="images/slide-2.jpg")
+      .item 
+        .background-2
+        img(src="images/slide-3.jpg")
+      .item
+        .background-2
+        img(src="images/slide-1.jpg")
+      .item 
+        .background-2
+        img(src="images/slide-2.jpg")
+      .item 
+        .background-2
+        img(src="images/slide-3.jpg")
+
+  .text-about
+    .container
+      .left 
+        p
+          |We know how it is. Whether you’re storyboarding, planning shots, or sweating that last-minute edit, 
+          |searching for clips takes time and effort that you might not have.
+        p Many things bring us joy and satisfaction at first — then we become habituated to them. But habituation is not just a fact of life, it’s the fact of life: what we value most, what “never gets old” for us, is love. We shape our lives around the activities, things, and people that hold our interest.
+          
+        p Story informs every decision in the empire’s films and parks.
+      .right
+        p 
+         |Humbly billed as “a conference for creatives” — “if you 
+         br
+         |enjoy creating things and learning from other creative 
+         br
+         |people, this experience is for you” — creator Ben Arment’s
+         br
+         | event featured world-class talents. Speakers touched on 
+         br
+         |several recurring themes: It’s about the struggle, the 
+         br
+         |journey, not the goal. Create space for dumb ideas. Silence 
+         br
+         |your inner critic. And hide the technology from whatever 
+         br
+         |story you tell. Here are a few notes I took from some of my
+         br
+         | favorite speakers.
+  .map
+    .container
+      .block-map
+        img(src="images/Logo small.svg")
+        img(src="images/krest.png").close
+        p.text 
+          |Мы находимся в самом центре 
+          br
+          |города, в БЦ «Лига Наций», с видом на 
+          br
+          |Покровский сквер и собор.  
+        p.info 
+          |Ростов-на-Дону, ул. Суворова, 93
+          br
+          |БЦ «Лига Наций», 4 этаж
+          br
+          |+7 (863) 302-02-31
+       
+    #map-canvas
+
+  .footer-2
+    .container
+      .left
+        .left-one
+          p 
+            |Ростов-на-Дону, ул. Суворова, 93
+            br
+            |БЦ «Лига Наций», 4 этаж
+            br
+            |+7 (863) 302-02-31
+        .left-two
+          ul 
+            li
+              a(href="#") Excellence
+            li
+              a(href="#") Цены и услуги
+            li
+              a(href="#") Оборудование
+        p.copy © 2015, DENTAL EXCELLENCE OFFICE
+
+      .right
+        p.title Безналичная оплата услуг
+        img(src="images/visa.png")
+        img(src="images/master.png")
+        p.copy Разработка AHEAD

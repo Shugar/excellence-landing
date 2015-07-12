@@ -3,7 +3,7 @@ head
   meta(name="viewport" content="width=device-width")
   link(rel="stylesheet" href="stylesheets/app.css")
   meta(charset="utf-8")
-  title Excellence
+  title Главная | Excellence
 
   script(src="javascripts/vendor.js")
   script(src="javascripts/app.js")
@@ -15,20 +15,21 @@ head
 
 body
   .stellars
-    .stellar-1
-      img(src="images/parallax/1.png")
-    .stellar-2
-      img(src="images/parallax/2.png")
-    .stellar-3
-      img(src="images/parallax/3.png")
-    .stellar-4
-      img(src="images/parallax/4.png")
-    .stellar-5
-      img(src="images/parallax/5.png")
-    .stellar-6
-      img(src="images/parallax/6.png")
-    .stellar-7
-      img(src="images/parallax/7.png")
+    .container
+      .stellar-1
+        img(src="images/parallax/1.svg")
+      .stellar-2
+        img(src="images/parallax/5.svg")
+      .stellar-3
+        img(src="images/parallax/4.svg")
+      .stellar-4
+        img(src="images/parallax/7.svg")
+      .stellar-5
+        img(src="images/parallax/2.svg")
+      .stellar-6
+        img(src="images/parallax/6.svg")
+      .stellar-7
+        img(src="images/parallax/3.svg")
 
   .header
     .container
@@ -37,13 +38,14 @@ body
           nav
             ul 
               li
-                a(href="#") Excellence
+                a(href="excellence.html") Excellence
               li
-                a(href="#") Цены и услуги
+                a(href="oborudovanie.html") Цены и услуги
               li
-                a(href="#") Оборудование
+                a(href="oborudovanie.html") Оборудование
         .center
-          img(src="images/Logo.svg")
+          a(href="index.html")
+            img(src="images/Logo.svg")
         .right
           button Записаться на прием
           p +7 863 302-02-31
@@ -78,8 +80,7 @@ body
 
   .about-us
     .container
-
-      img(src="images/facts.png").title
+      h1.title 5 фактов об Excellence
       .block-1
         .left
           img(src="images/circle-1.png")
@@ -132,7 +133,7 @@ body
 
   .services
     .container
-      img(src="images/uslugi.png").title-container
+      h1.title-container Услуги
       .services-content
         .item
           img(src="images/uslugi-1.svg")
@@ -159,7 +160,7 @@ body
 
   .feedback
     .container
-      img(src="images/feedback.png").title-content
+      h1.title-content Отзывы клиентов
       .content
         .left 
           .item

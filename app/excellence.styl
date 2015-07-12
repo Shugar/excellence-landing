@@ -1,0 +1,163 @@
+@import 'nib'
+@import 'settings'
+@import 'layout'
+
+.title-page
+  @extend $title
+  margin-bottom 30px
+  margin-top 50px
+  
+.text-about
+  margin-top 50px
+  .left, .right
+    display inline-block
+    width 49.8%
+    vertical-align top
+    p
+      color blackText
+      font 20px angelica
+      line-height 36px
+      
+    &:first-child
+      p 
+        width 550px
+        margin-top 25px
+        &:first-child
+          margin-top 0
+          
+.map
+  margin-top 50px
+  position relative
+  height 600px
+  overflow hidden
+  .block-map
+    border 1px purpleLink solid
+    opacity 0
+    position absolute
+    top 700px
+    left 50%
+    width 350px
+    transform translateX(-50%)
+    background #fff
+    transition all 0.5s ease
+    &:after
+      content ''
+      display block
+      position absolute
+      bottom 1
+      left 50%
+      transform translateX(-50%)
+      width 0
+      height 0
+      border-color #fff transparent transparent transparent
+      border-style solid
+      border-width 10px 13px 0 13px
+    &:before
+      content ''
+      display block
+      position absolute
+      bottom -11.5px
+      transform translateX(-50%)
+      left 50%
+      width 0
+      height 0
+      border-color purpleLink transparent transparent transparent
+      border-style solid
+      border-width 11px 13.5px 0 13.5px
+    .close
+      position absolute
+      height 20px
+      top 0
+      right 0
+      cursor pointer
+    img
+      height 105px
+      margin 0 auto
+      display block
+      padding 15px
+    .info, .text
+      text-align center
+      color blackText
+      
+    .info
+      font 16px angelica
+      line-height 26px
+      padding 26px
+      
+    .text
+      font 16px angelicat
+      font-style italic
+      line-height 26px
+      margin-top 25px
+      
+  .visible-map
+    opacity 1
+    z-index 9999
+    top 100px
+    transition top 0.5s
+  #map-canvas
+    height 100%
+    // .window-popup
+    //   height 250px
+    //   img
+    //     height 105px
+    //     display block 
+    //     margin 0 auto
+    //   p
+    //     text-align center
+.footer-2
+  font-size 16px
+  height 270px
+  .left
+    display inline-block
+    vertical-align top
+    .left-one, .left-two
+      margin-left 43px
+      display inline-block
+      font 1em angelica
+      margin-top 30px
+      color #111111
+      font-weight 600
+      &:first-child
+        margin-left 0
+      p
+        line-height 37px
+        letter-spacing 0px
+      a
+        letter-spacing 2px
+        color #111
+        line-height 37px
+        &:hover
+          color purpleLinkHover
+    .copy
+      margin-top 76px
+      font-size 15px
+      letter-spacing 1.1px
+      font-style italic
+      color #777
+    .left-two
+      font-style italic 
+  .right
+    position absolute
+    right 0
+    top 0
+    display inline-block
+    vertical-align top
+    margin-top 39px
+    margin-right 60px
+    line-height 35px
+    .title
+      font 1em angelica 
+      font-weight 600
+      color #111
+    img
+      margin-left 20px
+      margin-top 18px
+      vertical-align middle
+      &:nth-child(2)
+        margin-left -3px
+    .copy
+      font 15 angelica 
+      color #777
+      margin-top 95px
+      font-style italic

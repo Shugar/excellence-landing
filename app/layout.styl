@@ -1,0 +1,165 @@
+
+.background-2
+  height 100% 
+  width 100%
+  position absolute
+  top 0
+  left 0
+  background rgba(255,255,255,0.08)
+  z-index 9999
+  opacity 0
+  
+.visible 
+  opacity 1
+
+
+
+.slick-prev
+  opacity 1
+  height 50px
+  left 50px
+  background url('../images/left.png') no-repeat left center
+  &:hover
+    background url('../images/left.png') no-repeat left center
+  &:focus
+    background url('../images/left.png') no-repeat left center
+  &:before
+    content ''
+
+.slick-next
+  opacity 1
+  height 50px
+  width 21px
+  right 50px
+  background url('../images/right.png') no-repeat left center
+  &:hover
+    background url('../images/right.png') no-repeat left center
+  &:focus
+    background url('../images/right.png') no-repeat left center
+  &:before
+    content ''
+body 
+  min-width 1200px
+
+purpleLink = #7d396e
+purpleLinkHover = #cb596e
+blackText = #111
+gradientPurple = linear-gradient(left, #74366e, #cb596e)
+gradientPurple-3 = linear-gradient(right, #74366e, #cb596e)
+gradientPurple-2 = linear-gradient(bottom, #74366e, #cb596e)
+buttonBorder = 1px #cb596e solid
+angelica = 'Anglecia Pro Text', sans-serif
+angelicad = 'Anglecia Pro Display', sans-serif
+angelicat = 'Anglecia Pro Title', sans-serif
+bodoni = 'a_BodoniNova', sans-serif
+
+
+
+$title
+  font 60px bodoni
+  text-align center
+  font-style italic
+  background gradientPurple-3
+  -webkit-background-clip text
+  -webkit-text-fill-color transparent
+  
+$all
+  margin-top 60px
+  text-align center
+  font-size 12px
+  letter-spacing 1.5px
+  a
+    font-family angelica
+    border-bottom 1px purpleLink dotted
+    color purpleLink
+    &:hover
+      color purpleLinkHover
+      border-bottom 1px purpleLinkHover dotted
+
+
+
+a
+  text-decoration none 
+.href
+  a
+    color blackText
+    text-decoration none
+    &:hover
+      color purpleLinkHover
+  .active
+    color purpleLinkHover
+      
+.href-2
+  a
+    color purpleLink
+    text-decoration none
+    border-bottom 1px purpleLink dotted
+    &:hover
+      color purpleLinkHover
+      border-bottom 1px purpleLinkHover dotted
+
+.slick-dots 
+  li 
+    button
+      &:before
+        font-size 40px
+        line-height 12px
+        color purpleLink
+    &.slick-active 
+      button:before
+        color purpleLinkHover
+
+.container
+  position relative
+  margin 0 auto
+  width 1160px
+  clearfix()
+  
+
+@keyframes arrow 
+  0% 
+    transform translateY(0)
+    
+  50% 
+    transform translateY(100px)
+
+  100% 
+     
+    transform translateY(0)
+
+@keyframes arrow-2
+  0% 
+    transform translateY(100px)
+    
+  50% 
+    transform translateY(0)
+
+  100% 
+    transform translateY(100px)
+
+@keyframes arrow-3
+  0% 
+    transform translateY(50px)
+    
+  50% 
+    transform translateY(0)
+
+  100% 
+    transform translateY(50px)
+    
+
+@keyframes arrow-4
+  0% 
+    transform translateY(0)
+    
+  50% 
+    transform translateY(50px)
+
+  100% 
+     
+    transform translateY(0)
+
+
+.active
+  font-style normal
+  color purpleLink

@@ -1,75 +1,69 @@
 @import 'nib'
 @import 'settings'
+@import 'layout'
 
 global-reset()
 
-body 
-  min-width 1200px
 
-purpleLink = #7d396e
-purpleLinkHover = #cb596e
-blackText = #111
-gradientPurple = linear-gradient(left, #74366e, #cb596e)
-gradientPurple-2 = linear-gradient(bottom, #74366e, #cb596e)
-buttonBorder = 1px #cb596e solid
-angelica = 'Anglecia Pro Text', sans-serif
-angelicad = 'Anglecia Pro Display', sans-serif
-angelicat = 'Anglecia Pro Title', sans-serif
-bodoni = 'a_BodoniNova', sans-serif
+.stellars
+  width 100%
+  height 100%
+  position absolute
+  top 0 
+  left 0
+  .stellar-1, .stellar-2, .stellar-3, .stellar-4, .stellar-5, .stellar-6, .stellar-7
+    img
+      position absolute
+    &:first-child
+      img
+        top 1020px
+        right -55px
+        height 280px
+        animation arrow-4 21s linear infinite
+    
+    &:nth-child(2)
+      img
+        height 250px
+        top 1230px
+        left -25px
+        z-index 9999
+        animation arrow-3 19s linear infinite  
+        
+    &:nth-child(3)
+      img
+        height 220px
+        top 1600px
+        right -75px
+        animation arrow-2 25s linear infinite
+        
+    &:nth-child(4)
+      img
+        height 105px
+        top 1950px
+        left 300px
+        animation arrow 25s linear infinite
+        
+            
+    &:nth-child(5)
+      img
+        top 2320px
+        right -65px
+        height 94px
+        animation arrow-2 20s linear infinite
 
-// Common
-
-$all
-  margin-top 60px
-  text-align center
-  font-size 12px
-  letter-spacing 1.5px
-  a
-    font-family angelica
-    border-bottom 1px purpleLink dotted
-    color purpleLink
-    &:hover
-      color purpleLinkHover
-      border-bottom 1px purpleLinkHover dotted
-
-
-
-
-a
-  text-decoration none 
-.href
-  a
-    color purpleLink
-    text-decoration none
-    &:hover
-      color purpleLinkHover
+    &:nth-child(6)
+      img
+        height 145px
+        top 2420px
+        right -110px
+        animation arrow-2 20s linear infinite
       
-.href-2
-  a
-    color purpleLink
-    text-decoration none
-    border-bottom 1px purpleLink dotted
-    &:hover
-      color purpleLinkHover
-      border-bottom 1px purpleLinkHover dotted
-
-.slick-dots 
-  li 
-    button
-      &:before
-        font-size 40px
-        line-height 12px
-        color purpleLink
-    &.slick-active 
-      button:before
-        color purpleLinkHover
-
-.container
-  position relative
-  margin 0 auto
-  width 1160px
-  clearfix()
-
+    &:nth-child(7)
+      img
+        height 143px
+        top 2350px
+        margin-left -75px
+        animation arrow-3 23s linear infinite
 
 .header
   font-family angelica
@@ -139,7 +133,7 @@ a
         position relative
         color #111111
         .background
-          background rgba(255,255,255,.5)
+          background rgba(255,255,255,.8)
           opacity 0
           transition opacity 2s
           transition-delay 2s
@@ -185,89 +179,17 @@ a
         .sub-title
           font-size 16px
           margin-top 15px
-  
-
-@keyframes arrow 
-  0% 
-    transform translateY(0)
-    
-  50% 
-    transform translateY(100px)
-
-  100% 
      
-    transform translateY(0)
 
-@keyframes arrow-2
-  0% 
-    transform translateY(100px)
-    
-  50% 
-    transform translateY(0)
-
-  100% 
-    transform translateY(100px)
-    
-.stellars
-  width 100%
-  height 100%
-  position absolute
-  top 0 
-  left 0
-  .stellar-1, .stellar-2, .stellar-3, .stellar-4, .stellar-5, .stellar-6, .stellar-7
-    img
-      position absolute
-      top 250px
-    &:first-child
-      img
-        top 1050px
-        right 50px
-        animation arrow 25s linear infinite
-    
-    &:nth-child(2)
-      img
-        top 1150px
-        left 75px
-        animation arrow 25s linear infinite  
-        
-    &:nth-child(3)
-      img
-        top 1600px
-        right 75px
-        animation arrow-2 25s linear infinite
-        
-    &:nth-child(4)
-      img
-        top 1950px
-        left 450px
-        animation arrow 25s linear infinite
-        
-            
-    &:nth-child(5)
-      img
-        top 2300px
-        right 25px
-        animation arrow-2  25s linear infinite
-
-    &:nth-child(6)
-      img
-        top 2200px
-        right 75px
-        animation arrow-2 25s linear infinite
-      
-    &:nth-child(7)
-      img
-        top 2450px
-        left 50px
-        animation arrow-2 25s linear infinite
    
       
 .about-us
   margin-top 120px
   .container
     .title 
-      display block
-      margin 0 auto
+      @extend $title
+      
+      
     .block-1, .block-3, .block-5
       margin-top 70px
       height 350px
@@ -284,10 +206,8 @@ a
         width 55%
         .number
           font-family bodoni
-          color purpleLink
           font-size 60px
           margin-top 50px
-          
         .text
           margin-top 15px 
           line-height 36px
@@ -306,7 +226,6 @@ a
         width 65%
         .number
           font-family bodoni
-          color purpleLink
           font-size 60px
           margin-left 103px
           margin-top 26px
@@ -322,10 +241,27 @@ a
           position absolute
           right 0px
           top -47px
+          
+    .block-1
+      margin-top 32px
+      .number
+        color #74366e
+      
+    .block-2
+      margin-top 19px
+      .number
+        color #9f476e
+      
     .block-3
       margin-top 19px
+      .number
+        color #a74a6f
+      
     .block-4
       margin-top 32px
+      .number
+        color #bb536e
+      
     .block-5
       margin-top 19px
       .left
@@ -334,20 +270,18 @@ a
       .right
         width 55%
         .number
-          font-family bodoni
-          color purpleLink
           font-size 60px
           margin-top 50px
-          
+          color #c8586f
         .text
           margin-top 15px 
           line-height 36px
+          
 .services
   margin-top 114px
   .container
     .title-container
-      display block
-      margin 0 auto
+      @extend $title
     .services-content
       margin-top 70px
       .item
@@ -396,8 +330,7 @@ a
   margin-top 158px
   .container
     .title-content
-      display block
-      margin 0 auto
+      @extend $title
     .content
       margin-top 75px
       .left, .right, .center
@@ -442,10 +375,10 @@ a
       .left
         width 42%
         margin-left 90px
-        border-right 2px purpleLink solid
+        border-right 2px purpleLinkHover solid
         .item
           margin-top 70px
-          margin-bottom 75px
+          margin-bottom 80px
           &:first-child 
             margin-top 0
           &:after
@@ -531,7 +464,9 @@ a
     .left-two
       font-style italic 
   .right
-    float right
+    position absolute
+    right 0
+    top 0
     display inline-block
     vertical-align top
     margin-top 39px
