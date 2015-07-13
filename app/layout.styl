@@ -12,11 +12,14 @@
 .visible 
   opacity 1
 
-
+.slick-slide
+  img
+    height 550px
 
 .slick-prev
   opacity 1
   height 50px
+  z-index 9999
   left 50px
   background url('../images/left.png') no-repeat left center
   &:hover
@@ -27,6 +30,7 @@
     content ''
 
 .slick-next
+  z-index 9999
   opacity 1
   height 50px
   width 21px
@@ -57,6 +61,7 @@ bodoni = 'a_BodoniNova', sans-serif
 
 $title
   font 60px bodoni
+  letter-spacing 3.5px
   text-align center
   font-style italic
   background gradientPurple-3

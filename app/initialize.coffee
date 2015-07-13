@@ -30,3 +30,13 @@ $(document).ready ->
 
   $('.block-map .close').click ->
     $('.block-map').removeClass('visible-map')
+
+
+
+  $('.main-items .item').mouseenter ->
+    $(this).find('.text').removeClass('visible')
+    $(this).find('img').addClass('visible')
+
+  $('.main-items .item').mouseleave ->
+    $(this).find('.text').addClass('visible')
+    $(this).find('img').removeClass('visible')

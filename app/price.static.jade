@@ -1,0 +1,293 @@
+doctype html
+head
+  meta(name="viewport" content="width=device-width")
+  link(rel="stylesheet" href="stylesheets/app.css")
+  meta(charset="utf-8")
+  title Цены и услуги | Excellence
+
+  script(src="javascripts/vendor.js")
+  script(src="javascripts/app.js")
+  script(src="https://maps.googleapis.com/maps/api/js?v=3?key=AIzaSyALv14QJCMFIoAqH2JLuGruwxtxCG_IBKk")
+
+
+  script.
+    require('initialize');
+    require('main');
+
+
+body
+  .header
+    .container
+      .content 
+        .left.href
+          nav
+            ul 
+              li
+                a(href="excellence.html") Excellence
+              li
+                a(href="price.html").active Цены и услуги
+              li
+                a(href="oborudovanie.html") Оборудование
+        .center
+          a(href="index.html")
+            img(src="images/Logo.svg")
+        .right
+          button Записаться на прием
+          p +7 863 302-02-31
+      h1 ВАША ДВЕРЬ В МИР НЕПРЕВЗОЙДЕННОГО КАЧЕСТВА
+
+
+  .price-content
+    .container
+      h1.title-page Цены и услуги
+      .main-items
+        .item
+          a(href="#").link
+          p.title ДИАГНОСТИКА DIAGNOCAM
+          p.text.visible
+            |Современное оборудование KAVO позволяет диагностировать кариес там, где другие не могут 
+            br
+            |его обнаружить.
+          p.price От 1500 рублей
+          img(src="images/circle-1.png")
+
+        .item
+          a(href="#").link
+          p.title ПРОТЕЗИРОВАНИЕ
+          p.text.visible
+            |Безболезненная хирургия и качественная
+            br
+            |установка зубных протезов всего за 3 приема.
+          p.price От 1500 рублей
+          img(src="images/circle-2.png")
+
+        .item
+          a(href="#").link
+          p.title ОТБЕЛИВАНИЕ
+          p.text.visible
+            |Пусть ваша улыбка сияет и удивляет 
+            br
+            |окружающих своей белезной.
+          p.price От 1500 рублей
+          img(src="images/circle-3.png")
+
+        .item
+          a(href="#").link
+          p.title УСТАНОВКА ЗУБНЫХ КОРОНОК
+          p.text.visible
+            |Пусть ваша улыбка сияет и удивляет 
+            br
+            |окружающих своей белезной.
+          p.price От 1500 рублей
+          img(src="images/circle-4.png")
+
+  .tables
+    .container
+      .left
+        .item
+          p.title ТЕРАПИЯ
+          table
+            tr
+              td Консультация
+              td 1 000.–
+            tr
+              td Диагностика кариеса DIAGNOcam
+              td 2 000.–
+            tr
+              td Анестезия инъекционная местная
+              td 500.–
+            tr
+              td Индивидуальный терапевтический пакет (мини)
+              td 300.–
+            tr
+              td Индивидуальный терапевтический пакет
+              td 500.–
+            tr
+              td Снимок рентгенографический
+              td 290.–
+            tr
+              td Снимок ортопантоммогафический
+              td 1 850.–
+        .item
+          p.title-2 
+            |ЛЕЧЕНИЕ КАРИЕСА ЗУБОВ 
+            br
+            |(ЭСТЕТИЧЕСКАЯ РЕСТАВРАЦИЯ)
+          table
+            tr
+              td Реставрация 1-оq поверхности
+              td 5 800.–
+            tr
+              td Реставрация 2-х поверхностей
+              td 6 200.–
+            tr
+              td Реставрация 3-х поверхностей
+              td 6 700.–
+            tr
+              td Реставрация 4-х поверхностей
+              td 9 950.–
+            tr
+              td Реставрация 5-и поверхностей
+              td 7 200.–
+            tr 
+              td 
+                |Индивидуализированное 
+                span (авторское) 
+                |исполнение фронтовой группы зубов
+              td 12 500.–
+            tr
+              td 
+                |Лечение раннего кариеса «ICON» 
+                span (за 1 зуб)
+              td 4 500.–
+            tr
+              td Герметизация фиссур неинвазивная
+              td 4 000.–
+            tr
+              td Пломбирование зубов стеклоиономерными цементами
+              td 1 000.–
+            tr
+              td Закрытие перфорации зуба PROROOT MTA
+              td 2 500.–
+            tr
+              td Временная пломба
+              td 500.–
+            tr
+              td Полировка реставрацй
+              td 750.–
+        .item
+          p.title-2 ЭНДОДОНТИЯ
+          table
+            tr
+              td 
+                |Фиксация временной коронки, вкладки
+            tr
+              td 
+                |Временная коронка 
+                span (клиническая) 
+            tr
+              td 
+                |Временная коронка 
+                span (вкладка, винир) 
+                |индивидуализированная композитом
+            tr
+              td 
+                |Временная коронка на имплантат 
+                span (клиническая)
+      .right
+        .item
+          p.title ОРТОПЕДИЯ
+          table
+            tr
+              td Индивидуальный ортопедический пакет
+              td 500.–
+            tr
+              td Первичная консультация
+              td 1 500.–
+            tr
+              td Анестезия инъекционная местная
+              td 500.–
+            tr
+              td 
+                |Обследование пациента 
+                span (консультация, снятие слепков, фотоанализ, изготовление и изучение диагностических моделей, составление плана лечения и сметы)
+              td 3 500.–
+            tr
+              td Электронная аксиография
+              td 10 000.–
+            tr
+              td Снимок рентгенографический
+              td 290.–
+        .item
+          p.title-3 ВКЛАДКИ
+          table
+            tr
+              td 
+                |Керамическая вкладка 
+                span (overlay)
+              td 25 000.–
+            tr
+              td 
+                |Керамическая вкладка 
+                span (inlay)
+              td 18 000.–
+            tr
+              td 
+                |Керамическая вкладка 
+                span (onlay)
+              td 23 500.–
+            tr
+              td 
+                |Цельнолитая метллическая вкладка 
+                span (внутрикорневая)
+              td 7 000.–
+            tr
+              td 
+                |Композитная индивидуальная вкладка 
+                span (внутрикорневая)
+              td 8 000.–
+            tr
+              td 
+                |Металлическая золотосодержащая вкладка 
+                span (внутрикорневая)
+              td 15 000.–
+        
+        .item
+          p.title-2 ВРЕМЕННЫЕ КОРОНКИ
+          table
+            tr
+              td 
+                |Фиксация временной коронки, вкладки
+              td 500.-
+            tr
+              td 
+                |Временная коронка 
+                span (клиническая) 
+              td 1 500.-
+            tr
+              td 
+                |Временная коронка 
+                span (вкладка, винир) 
+                |индивидуализированная композитом
+              td 2 300.-
+            tr
+              td 
+                |Временная коронка на имплантат 
+                span (клиническая)
+              td 7 000.–
+            tr
+              td 
+                |Композитная индивидуальная вкладка 
+                span (внутрикорневая)
+              td 8 000.–
+            tr
+              td 
+                |Металлическая золотосодержащая вкладка 
+                span (внутрикорневая)
+              td 15 000.–
+
+  .footer
+    .container
+      .left
+        .left-one
+          p 
+            |Ростов-на-Дону, ул. Суворова, 93
+            br
+            |БЦ «Лига Наций», 4 этаж
+            br
+            |+7 (863) 302-02-31
+        .left-two
+          ul 
+            li
+              a(href="#") Excellence
+            li
+              a(href="#") Цены и услуги
+            li
+              a(href="#") Оборудование
+        p.copy © 2015, DENTAL EXCELLENCE OFFICE
+
+      .right
+        p.title Безналичная оплата услуг
+        img(src="images/visa.png")
+        img(src="images/master.png")
+        p.copy Разработка AHEAD
