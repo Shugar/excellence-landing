@@ -1,0 +1,138 @@
+
+@font-face {
+	font-family: 'Anglecia Pro Title';
+	src: url('../fonts/AngleciaProTitle-Italic.eot');
+	src: url('../fonts/AngleciaProTitle-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/AngleciaProTitle-Italic.woff') format('woff'),
+		url('../fonts/AngleciaProTitle-Italic.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Anglecia Pro Text';
+	src: url('../fonts/AngleciaProText-Regular.eot');
+	src: url('../fonts/AngleciaProText-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/AngleciaProText-Regular.woff') format('woff'),
+		url('../fonts/AngleciaProText-Regular.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura C';
+	src: url('../fonts/FuturaDemiC.eot');
+	src: url('../fonts/FuturaDemiC.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FuturaDemiC.woff') format('woff'),
+		url('../fonts/FuturaDemiC.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Anglecia Pro Title';
+	src: url('../fonts/AngleciaProTitle-Regular.eot');
+	src: url('../fonts/AngleciaProTitle-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/AngleciaProTitle-Regular.woff') format('woff'),
+		url('../fonts/AngleciaProTitle-Regular.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Anglecia Pro Display';
+	src: url('../fonts/AngleciaProDisplay-Italic.eot');
+	src: url('../fonts/AngleciaProDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/AngleciaProDisplay-Italic.woff') format('woff'),
+		url('../fonts/AngleciaProDisplay-Italic.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Anglecia Pro Display';
+	src: url('../fonts/AngleciaProDisplay-Regular.eot');
+	src: url('../fonts/AngleciaProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/AngleciaProDisplay-Regular.woff') format('woff'),
+		url('../fonts/AngleciaProDisplay-Regular.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Anglecia Pro Text';
+	src: url('../fonts/AngleciaProText-Italic.eot');
+	src: url('../fonts/AngleciaProText-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/AngleciaProText-Italic.woff') format('woff'),
+		url('../fonts/AngleciaProText-Italic.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Futura Book C';
+	src: url('../fonts/FuturaBookC.eot');
+	src: url('../fonts/FuturaBookC.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FuturaBookC.woff') format('woff'),
+		url('../fonts/FuturaBookC.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Bodoni';
+    src: url('../fonts/12777-webfont.eot');
+    src: url('../fonts/12777-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/12777-webfont.woff2') format('woff2'),
+         url('../fonts/12777-webfont.woff') format('woff'),
+         url('../fonts/12777-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Bodoni';
+    src: url('../fonts/bodoninova_bold-webfont.eot');
+    src: url('../fonts/bodoninova_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bodoninova_bold-webfont.woff2') format('woff2'),
+         url('../fonts/bodoninova_bold-webfont.woff') format('woff'),
+         url('../fonts/bodoninova_bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Bodoni';
+    src: url('../fonts/bodoninova_italic-webfont.eot');
+    src: url('../fonts/bodoninova_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bodoninova_italic-webfont.woff2') format('woff2'),
+         url('../fonts/bodoninova_italic-webfont.woff') format('woff'),
+         url('../fonts/bodoninova_italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Bodoni';
+    src: url('../fonts/bodoninova_regular-webfont.eot');
+    src: url('../fonts/bodoninova_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bodoninova_regular-webfont.woff2') format('woff2'),
+         url('../fonts/bodoninova_regular-webfont.woff') format('woff'),
+         url('../fonts/bodoninova_regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
