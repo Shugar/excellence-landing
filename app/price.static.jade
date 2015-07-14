@@ -12,7 +12,6 @@ head
 
   script.
     require('initialize');
-    require('main');
 
 
 body
@@ -288,6 +287,7 @@ body
 
       .right
         p.title Безналичная оплата услуг
-        img(src="images/visa.png")
-        img(src="images/master.png")
-        p.copy Разработка AHEAD
+        img(src="images/visa.svg")
+        img(src="images/master.svg")
+        a(href="http://aheadstudio.ru/" target="_blank").copy Разработка AHEAD
+  include ./modal.static.jade

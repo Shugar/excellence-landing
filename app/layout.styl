@@ -1,3 +1,5 @@
+@import 'settings'
+
 purpleLink = #7d396e
 purpleLinkHover = #cb596e
 blackText = #111
@@ -9,21 +11,37 @@ angelica = 'Anglecia Pro Text', sans-serif
 angelicad = 'Anglecia Pro Display', sans-serif
 angelicat = 'Anglecia Pro Title', sans-serif
 bodoni = 'Bodoni', sans-serif
+aldine = 'Aldine', sans-serif
 
 
 
-.background-2
-  height 100% 
-  width 100%
-  position absolute
-  top 0
-  left 0
-  background rgba(255,255,255,0.08)
-  z-index 9999
-  opacity 0
+.slick-2
+  position relative
+  
+.center
+  position relative
+  .background-gallery
+    absolute top left
+    width 100%
+    height 100%
+    z-index 9999
+    flexy row nowrap
+    pointer-events none
+    > div
+      height 100%
+    .flex-1, .flex-3
+      flex 1 0 auto
+      background rgba(255,255,255,.8)
+    .flex-2
+      flex 0 0 824px
+      
+      
+
+
   
 .visible 
   opacity 1
+
 
 .slick-slide
   img
@@ -34,13 +52,16 @@ bodoni = 'Bodoni', sans-serif
   height 50px
   z-index 9999
   left 50px
-  background url('../images/left.png') no-repeat left center
+  background url('../images/Left Normal.svg') no-repeat left center
   &:hover
-    background url('../images/left.png') no-repeat left center
+    background url('../images/Left Hover.svg') no-repeat left center
   &:focus
-    background url('../images/left.png') no-repeat left center
+    background url('../images/Left Hover.svg') no-repeat left center
   &:before
     content ''
+    
+  &.slick-disabled
+    display none !important
 
 .slick-next
   z-index 9999
@@ -48,13 +69,16 @@ bodoni = 'Bodoni', sans-serif
   height 50px
   width 21px
   right 50px
-  background url('../images/right.png') no-repeat left center
+  background url('../images/Right Normal.svg') no-repeat left center
   &:hover
-    background url('../images/right.png') no-repeat left center
+    background url('../images/Right Hover.svg') no-repeat left center
   &:focus
-    background url('../images/right.png') no-repeat left center
+    background url('../images/Right Hover.svg') no-repeat left center
   &:before
     content ''
+    
+  &.slick-disabled
+    display none !important
 body 
   min-width 1200px
 
@@ -77,12 +101,13 @@ $all
   font-size 12px
   letter-spacing 1.5px
   a
+    font-weight 700
     font-family angelica
-    border-bottom 1px purpleLink dotted
+    border-bottom 1px purpleLink solid
     color purpleLink
     &:hover
       color purpleLinkHover
-      border-bottom 1px purpleLinkHover dotted
+      border-bottom 1px purpleLinkHover solid
 
 
 
@@ -173,11 +198,11 @@ a
   color purpleLink
   
 .modal-container
-  display none
   background rgba(255,255,255, 0.7)
-  absolute top left
+  fixed top left
   width 100%
   height 100%
+  display none
   .modal-inner
     absolute top 50% left 50%
     transform translate(-50%,-50%) 
@@ -186,16 +211,25 @@ a
     background gradientPurple-2
     .krest
       absolute top 20px right 20px
+      background url('../images/cross normal.svg') no-repeat center
+      width 25px
+      cursor pointer 
+      height 25px
+      &:hover
+        background url('../images/cross hover.svg') no-repeat center
     p
       text-align center
       margin-top 75px
       font 34px bodoni
       font-style italic
       line-height 61px
+      letter-spacing 3.6px
       color #fff
       span
         font 16px angelica
         font-style italic
+        font-weight 300
+        letter-spacing 1.2px
     form
       input, select
         margin 0 auto
@@ -205,11 +239,36 @@ a
         background none
         border 0 
         color white
+        margin-top 25px
         font 16px angelica 
         border-bottom 1px #fff solid
         padding 10px 10px 10px 0
         outline none
         placeholder-color(#fff)
+      
+      select
+        margin-top 25px
+        width 445px
         
-
-
+      button
+        height 52px
+        width 264px
+        margin 0 auto
+        display block
+        margin-top 50px
+        text-transform uppercase
+        outline none
+        cursor pointer
+        color #fff
+        background transparent
+        font 14px 'Aldine'
+        letter-spacing 1px
+        font-style italic
+        round()
+        border 1px #fff solid
+        &:hover
+          background #fff
+          color purpleLink
+        
+.modal-visible
+  display block

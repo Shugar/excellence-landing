@@ -18,6 +18,7 @@
   "dependencies": {
     "jquery": "~2.1.1",
     "slick.js": "~1.5.5",
-    "jquery.stellar": "~0.6.2"
+    "jquery.stellar": "~0.6.2",
+    "WOW": "~1.1.2"
   }
 }

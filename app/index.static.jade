@@ -11,6 +11,9 @@ head
 
   script.
     require('initialize');
+    $(document).ready(function(){
+        new WOW().init();
+      });
 
 
 body
@@ -55,11 +58,13 @@ body
     .container
       .slick
         .item
+          a(href="#")
           .background
           img(src="images/slide-1.jpg")
           .text
             p.item-text Excellence Dental Office — первая клиника в Ростове- на-Дону с особо уютной атмосферой и современным немецким оборудованием. 
         .item 
+          a(href="#")
           .background
           img(src="images/slide-2.jpg")
           .text
@@ -69,6 +74,7 @@ body
             p.sub-title
               |основатель клиники Excellence
         .item 
+          a(href="#")
           .background
           img(src="images/slide-3.jpg")
           .text
@@ -80,8 +86,8 @@ body
 
   .about-us
     .container
-      h1.title 5 фактов об Excellence
-      .block-1
+      p.title 5 фактов об Excellence
+      .block-1.wow.fadeIn
         .left
           img(src="images/circle-1.png")
         .right
@@ -91,7 +97,7 @@ body
             |немецкого производителя высококачественного 
             |стоматологического оборудования с более чем 100-летней историей.
       
-      .block-2
+      .block-2.wow.fadeIn
         .left
           p.number 2
           p.text
@@ -101,7 +107,7 @@ body
         .right
           img(src="images/circle-2.png")
 
-      .block-3
+      .block-3.wow.fadeIn
         .left
           img(src="images/circle-3.png")
         .right
@@ -111,7 +117,7 @@ body
             |немецкого производителя высококачественного 
             |стоматологического оборудования с более чем 100-летней историей.
       
-      .block-4
+      .block-4.wow.fadeIn
         .left
           p.number 4
           p.text
@@ -121,7 +127,7 @@ body
         .right
           img(src="images/circle-4.png")
 
-      .block-5
+      .block-5.wow.fadeIn
         .left
           img(src="images/circle-5.png")
         .right
@@ -133,16 +139,16 @@ body
 
   .services
     .container
-      h1.title-container Услуги
+      p.title-container Услуги
       .services-content
         .item
           img(src="images/uslugi-1.svg")
           a(href="").title Диагностика
-          p.sub-title От 1000 рублей
+          p.sub-title От 1 000 рублей
         .item
           img(src="images/uslugi-2.svg")
           a(href="").title Лечение каркаса
-          p.sub-title От 4500 рублей
+          p.sub-title От 4 500 рублей
         .item
           img(src="images/uslugi-3.svg")
           a(href="").title Протезирование
@@ -150,17 +156,17 @@ body
         .item
           img(src="images/uslugi-4.svg")
           a(href="").title Эстетика
-          p.sub-title От 7500 рублей
+          p.sub-title От 7 500 рублей
         .item
           img(src="images/uslugi-5.svg")
           a(href="").title Коронки
-          p.sub-title От 2000 рублей
+          p.sub-title От 2 000 рублей
       p.all
         a(href="") ВСЕ УСЛУГИ
 
   .feedback
     .container
-      h1.title-content Отзывы клиентов
+      p.title-content Отзывы клиентов
       .content
         .left 
           .item
@@ -267,39 +273,9 @@ body
 
       .right
         p.title Безналичная оплата услуг
-        img(src="images/visa.png")
-        img(src="images/master.png")
-        p.copy Разработка AHEAD
+        img(src="images/visa.svg")
+        img(src="images/master.svg")
+        a(href="http://aheadstudio.ru/" target="_blank").copy Разработка AHEAD
 
       
-.modal-container
-  .modal-inner
-    a(href="").krest
-      img(src="images/krest-2.png")
-    p.title 
-      |Записаться на прием 
-      br
-      span по телефону
-      br
-      |+7 863 302-02-31
-      br
-      span или 
-
-    form
-      input(type="text" placeholder="Имя")
-      select(id="mounth")
-        option(value="hide") -- Month --
-        option(value="january" rel="icon-temperature") January
-        option(value="february") February
-        option(value="march") March
-        option(value="april") April
-        option(value="may") May
-        option(value="june") June
-        option(value="july") July
-        option(value="august") August
-        option(value="september") September
-        option(value="october") October
-        option(value="november") November
-        option(value="december") December
-
-      input(type="submit" value="ЗАПИСАТЬСЯ НА ПРИЕМ")
+  include ./modal.static.jade

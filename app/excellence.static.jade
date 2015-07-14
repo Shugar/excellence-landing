@@ -12,7 +12,6 @@ head
 
   script.
     require('initialize');
-    require('main');
 
 
 body
@@ -39,24 +38,24 @@ body
 
   .center
     h1.title-page Excellence
+    
+    .background-gallery
+      .flex-1
+      .flex-2
+      .flex-3
+
     .slick-2
       .item
-        .background-2
         img(src="images/1ED_7748.jpg")
       .item 
-        .background-2
         img(src="images/1ED_7377.jpg")
       .item 
-        .background-2
         img(src="images/1ED_7646.jpg")
       .item 
-        .background-2
         img(src="images/1ED_7224.jpg")
       .item
-        .background-2
         img(src="images/1ED_7586.jpg")
       .item 
-        .background-2
         img(src="images/1ED_7556.jpg")
       
 
@@ -130,6 +129,7 @@ body
 
       .right
         p.title Безналичная оплата услуг
-        img(src="images/visa.png")
-        img(src="images/master.png")
-        p.copy Разработка AHEAD
+        img(src="images/visa.svg")
+        img(src="images/master.svg")
+        a(href="http://aheadstudio.ru/" target="_blank").copy Разработка AHEAD
+  include ./modal.static.jade
